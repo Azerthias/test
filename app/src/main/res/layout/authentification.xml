@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="utilisateur" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="nom d'utilisateur"/>
+
+    <TextView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="mot de passe :" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="mot de passe"/>
+
+    <CheckBox
+        android:id="@+id/cbCreation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Créer un nouveau compte" />
+
+    <TextView
+        android:id="@+id/tvConnectionErreur"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/error" />
+
+    <Button
+        android:id="@+id/boutonConnection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Connection" />
+
+
+
+    <CheckBox
+        android:id="@+id/cbSouvenir"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Se souvenir de moi" />
+
+    <Button
+        android:id="@+id/bVersion"
+        android:text="Télécharger la nouvelle version"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start|top"
+        android:scrollbars="vertical"
+        android:layout_weight="1" />
+
+</LinearLayout>
